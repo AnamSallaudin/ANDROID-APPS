@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pass Data App</string>
+    <string-array name="food_options">
+        <item>Burger</item>
+        <item>Pizza</item>
+        <item>Salad</item>
+        <item>Pasta</item>
+        <item>Sushi</item>
+    </string-array>
+</resources>
