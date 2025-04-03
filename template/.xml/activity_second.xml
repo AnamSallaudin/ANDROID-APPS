@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Second Page!"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Task Name Input -->
+        <EditText
+            android:id="@+id/etTaskNameSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Name"
+            android:background="@android:drawable/edit_text"
+            android:textAlignment="center"/>
+
+        <!-- Due Date Picker -->
+        <Button
+            android:id="@+id/btnPickDateSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Due Date"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvDueDateSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Date: "
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Priority Spinner -->
+        <Spinner
+            android:id="@+id/spinnerPrioritySecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveTaskSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Task"
+            android:layout_marginTop="15dp"/>
+
+        <!-- ListView to Display Tasks -->
+        <ListView
+            android:id="@+id/listViewTasksSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnClearTasksSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All Tasks"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
